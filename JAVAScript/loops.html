@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //    let a=2+1;
+
+    //    switch(a){
+    //     case 1:
+    //     console.log('too small');
+    //     break;
+    //     case 2:
+    //     console.log('exactly');
+    //     break;
+    //     case 3:
+    //     console.log('too big');
+    //     break;
+    //     default:
+    //     console.log('idk such values');
+        
+    //    }
+            // console.log(key + " : " + person[key]);}
+        //    let arg = prompt("enter the value?");
+           
+        //    switch (arg) {
+        //     case '0':
+        //     case '1':
+        // console.log('one or zero ');
+        // break;
+        // case '2':
+        // console.log('two');
+        // break;
+        // case 3:
+        // console.log('never executes');
+        // break;
+        // default:
+        // console.log('an unknown value');
+        //    }
+        function ask (qustion,yes,no){
+            if(confirm(qustion)) yes();
+            else no();
+        }
+        ask(
+            "do you agree?",
+            function() {alert("you agreed.");},
+            function() {alert("you cancelled.");}
+    
+        );
+           </Script>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // resolve
+//        const Prom= new Promise((resolve,reject)=>{
+//    setTimeout(() =>{
+//      resolve("this is resolved in 3 sec")
+//    }, 3000);
+//  });
+//  Prom
+//  .then(mess=>console.log(mess)).catch(err=>console.log(err))
+
+// reject
+//  const Prom= new Promise((resolve,reject)=>{
+//    setTimeout(() =>{
+//      reject("this is resolved in 3 sec")
+//    }, 3000);
+//  });
+//  Prom
+//  .then(mess=>console.log(mess)).catch(err=>console.log(err))
+//   
+
+const Promise1 = new Promise(( resolve,reject )=>{
+    setTimeout(resolve,2000,'first')
+});
+const Promise2 = new Promise(( resolve,reject )=>{
+    setTimeout(resolve,1000,'second')
+});
+const Promise3 = new Promise(( resolve,reject )=>{
+    setTimeout(resolve,3000,'third')
+});
+
+// promises working method
+// Promise1.then((message)=>console.log(message))
+// Promise2.then((message)=>console.log(message))
+// Promise3.then((message)=>console.log(message))
+
+// promiseany,promiseall,promiseallsettled,promiserace
+
+Promise.any([Promise1,Promise2,Promise3])
+.then((results)=>{
+    console.log(results)
+})
+.catch((error)=>console.log(error))
+</script>
+</body>
+</html>

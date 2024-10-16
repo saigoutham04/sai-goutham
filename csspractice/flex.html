@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+</head>
+<style>
+    body{
+        background-color: brown;
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .container{
+        display: flex;
+        margin: 100px;
+        padding: 10px;
+        height: 500px;
+        /* justify-content: center; */
+        /* justify-content: flex-end; */
+        /* justify-content: space-around; */
+        /* justify-content: space-between; */
+        /* justify-content: space-evenly; */
+        justify-content: flex-start;
+    }
+     .box{
+        height: 100px;
+        width: 100px;
+        background-color: aquamarine;
+        display: flex;
+        font-size: 3rem;
+        border: 3px solid black;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 10px;
+         
+        
+    } 
+     .box-one{
+        background-color: aquamarine;
+     }
+     .box-two{
+        background-color: blue;
+     }
+     .box-three{
+        background-color: rgb(31, 231, 111);
+     }
+</style>
+<body>
+    <!-- <div   style="background-color: aquamarine;"  class="container">Division</div> -->
+    <!-- <span style="background-color: blue;">span</span> -->
+    <div class="container" style="background-color: bisque;">
+    <div class="box box-one">1</div>
+    <div class="box box-two">2</div>
+    <div class="box box-three">3</div>
+    <div style="background-color: blueviolet;">JFS16</div>
+</div>
+</body>
+</html>

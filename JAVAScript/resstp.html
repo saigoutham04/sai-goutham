@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+//         function sum(a,b,c){
+// return a+b+c
+//         }
+//         console.log(sum(1,2,3))
+//         function sum1(...args){
+//             let sum=0;
+//             for(let arg of arr){
+//                 sum+=args
+//             }
+//             return sum
+//         }
+//          console.log(sum1(1,2,3)) 
+
+// spread Syntax
+// copying array
+// let arr = [1,2,3];
+// let arrcopy =[...arr]
+// copying Object
+// let obj =[a:1, b:2,c:3];
+// let objcopy = [...obj]
+
+
+// function sayHi(){
+// console.log('hello')
+// }
+//  setTimeout(sayHi,10000);
+// function outerfunction(){
+//     let counter = 0
+//     function innerfunction(){
+//         counter+=1
+//         return counter
+//     }
+//     return innerfunction
+// }
+// let increment = outerfunction()  
+// console.log(increment())
+// console.log(increment())
+// console.log(increment())
+
+let animal= {
+eats : "yes i eats",
+walk(){
+    console.log("yes animals walks")
+}
+};
+let rabbit ={
+    jumps:true,
+    __proto__ : animal
+};
+let bigEar ={
+    earheight : 21,
+    __proto__ :rabbit
+}
+
+bigEar.walk()
+// rabbit.__proto__ = animal;
+console.log(rabbit.eats)
+console.log(bigEar.jumps)
+</script>
+</body>
+</html>
